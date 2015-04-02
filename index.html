@@ -1,0 +1,56 @@
+<html>
+
+	<head>
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<title>jQuery - Recherche photos </title>
+		<link rel="Stylesheet" type="text/css" href="css/jQuery.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<!-- Others javascript functions -->
+		<script type="text/javascript" src="js/util.js"></script>
+
+		<!-- Librarie Flick Javascript -->
+		<script type="text/javascript" src="js/libFlickr.js"></script>
+
+		<!-- Animation Javascript -->
+		<script type="text/javascript" src="js/animation.js"></script>
+	</head>
+
+<body onload="initAutocompleteLocation(10);">
+<!-- Search portail -->
+<div id="top_part">
+	<form id="search" onsubmit="getPhotosByLocation(); return false;">
+		<input type="text" name="location" id="location" placeholder="Votre commune.." />
+		Nombre de photos <input type="text" name="number" id="number" value="1" />
+		<input type="submit" value="Recherche"/>
+	</form>
+</div>
+
+<!-- End portail -->
+<div class="container">
+	<div class="row text-center">
+		
+		<div class="alert" id="error_alert"></div>
+		<div class="alert" id="information_alert"></div>
+		<div class="alert" id="warning_alert"></div>
+
+	<!-- View Image div -->
+		<div id="viewImage"> </div>
+	<!-- END Image div -->
+
+	<!-- Photo DIV -->
+
+		<div class="photos" id="div_photo"> </div>
+	<!-- END photo div -->
+	</div>
+</div>
+
+<div id="bot_part">
+	<div id="loading"><img src="images/ajax-loader.gif"></div>
+</div>
+
+
+
+</body>
+</html>
