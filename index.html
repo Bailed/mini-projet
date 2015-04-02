@@ -20,16 +20,25 @@
 <body onload="initAutocompleteLocation(10);">
 <!-- Search portail -->
 <div id="top_part">
-	<form id="search" onsubmit="getPhotosByLocation(); return false;">
-		<input type="text" name="location" id="location" placeholder="Votre commune.." />
-		Nombre de photos <input type="text" name="number" id="number" value="1" />
-		<input type="submit" value="Recherche"/>
-	</form>
+	<div class="container p-bottom">
+		<div class="row p-bottom">
+			<div class="col-md-12 text-center">
+			<h1 class="b-title">Recherche Flickr</h1>
+				<form class="" id="search" onsubmit="getPhotosByLocation(); return false;">
+					<input type="text" name="location" id="location" placeholder="Votre commune.." />
+					<button type="submit" class="btn my-btn"><i class="fa fa-search"></i></button>
+					<input type="text" name="number" id="number" value="1" />
+					<span class="desc-input">Photos</span>
+					
+				</form>
+			</div>
+		</div>
+	</div>
 </div>
 
 <!-- End portail -->
 <div class="container">
-	<div class="row text-center">
+	<div class="row text-center bg-white">
 		
 		<div class="alert" id="error_alert"></div>
 		<div class="alert" id="information_alert"></div>

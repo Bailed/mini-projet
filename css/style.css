@@ -13,7 +13,13 @@ body,input,textarea,select
 {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
+	height:100;
 	color: #000000;
+	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-origin: top left;
+	background-size: 100%;
+	background-attachment: fixed;
 }
 
 #top_part
@@ -56,51 +62,16 @@ body,input,textarea,select
 }
 
 #search
-{
-	width: 800px;
-	position: relative;
-	top: 88%;
+{	
+	height:20px;
+	width:80%;
+	bottom: 0;
+	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
 }
-
-	/* Button */
-
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-.button
-{
-	padding: 0.7em 1.5em 0.7em 1.5em;
-}
-
-input[type="button"].small,
-input[type="submit"].small,
-input[type="reset"].small,
-.button.small
-{
-	font-size: 0.75em;
-}
-	
-input[type="button"].big,
-input[type="submit"].big,
-input[type="reset"].big,
-.button.big
-{
-	font-size: 1.25em;
-	padding: 0.5em 1.25em 0.5em 1.25em;
-}
-	
-input[type="button"].huge,
-input[type="submit"].huge,
-input[type="reset"].huge,
-.button.huge
-{
-	font-size: 1.5em;
-	padding: 0.5em 1.25em 0.5em 1.25em;
-}
-
+-
 /* Form */
 form
 {
@@ -119,12 +90,12 @@ form input[type="email"],
 form input[type="password"],
 form textarea
 {
+	color: #000;
 	-webkit-appearance: none;
 	border: 0;
 	background: #f4f4f4;
 	padding: 0.75em;
 	width: auto;
-	border-radius: 5px;
 	-moz-transition: background-color .25s;
 	-webkit-transition: background-color .25s;
 	-o-transition: background-color .25s;
@@ -141,12 +112,10 @@ form textarea
 
 form input[type="text"]
 {
-	width: 400px;
-	height: 50px;
-	background-color: rgba(0,0,0,0.1);
-	border-top: 1px solid #2c3e50;
-	border-bottom: 1px solid #c0392b;
-	margin-right: 50px;
+	width: 60%;
+	height: 30px;
+	background-color: rgba(255,255,255,0.8);
+	color: #000;
 	font-size: 18px;
 	-moz-transition: background-color, border-top, .25s;
 	-webkit-transition: background-color, border-top, .25s;
@@ -155,15 +124,7 @@ form input[type="text"]
 	transition: background-color, border-top, .25s;
 }
 
-form input[type="text"]:hover
-{
-	border-top: 1px solid #c0392b;
-}
 
-form input[type="text"]:focus
-{
-	background-color: #c0392b;
-}
 
 form input[type="submit"]
 {
@@ -206,9 +167,10 @@ form input[type="password"],
 
 #number
 {
-	width: 7%;
-	height: 10%;
+	width: 60px;
+	height: 29px;
 	text-align: center;
+	margin-top: -1.6em;
 }
 
 #loading
@@ -239,6 +201,46 @@ form input[type="password"],
 }
 
 .middle-center {
-	margin-top:auto;
-	margin-bottom:auto;
+	margin: auto;
+}
+
+.bg-white {
+	background-color: rgba(255,255,255,0.7);
+	height:800%;
+}
+
+.photos {
+	margin-top: -6em;
+}
+
+.p-bottom {
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+
+.my-btn {
+	height: 30px;
+	display: inline;
+	margin-top: -1.65em;
+	margin-left: -1em;
+}
+
+.my-label {
+	display: inline;
+}
+
+.desc-input {
+	font-size: 1.2em;
+	margin-top: -4em;
+}
+
+.b-title {
+	margin-top: -3em;
+	margin-left: 3em;
+	text-align:left;
+	color: #fff;
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
 }

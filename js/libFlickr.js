@@ -58,7 +58,7 @@ function getPhotosByLocation()
 				var new_photo_div 	= "";
 				// Structure pour construire le lien source d'une photo : https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{o-secret}_o.(jpg|gif|png)
 				var init_div_image	= "<div class='image col-md-4 padding-buffer height-300' onclick='viewImage("+ object.id +")'>"
-				var display_photo 	= "<img class='middle-center' src='https://farm"+object.farm+".staticflickr.com/"+object.server+"/"+object.id+"_"+object.secret+"_n.jpg'/>";
+				var display_photo 	= "<img class='middle-center img-responsive' src='https://farm"+object.farm+".staticflickr.com/"+object.server+"/"+object.id+"_"+object.secret+"_n.jpg'/>";
 				var end_div_image 	= "</div>";
 				new_photo_div = init_div_image+display_photo+end_div_image;
 				$("#div_photo").append(new_photo_div);

@@ -37,10 +37,10 @@
 
 			// Fonction qui permet de sÃ©parer l'image d'accueil en deux (effet de porte)
 			function deplace(){
-				document.getElementById("top_part").style.top = "-50%";
-				document.getElementById("top_part").style.borderRadius = "15%";
-				document.getElementById("bot_part").style.top = "98%";
-				document.getElementById("bot_part").style.borderRadius = "5%";
+				document.getElementById("top_part").style.top = "-55%";
+				//document.getElementById("top_part").style.borderRadius = "15%";
+				document.getElementById("bot_part").style.top = "95%";
+				//document.getElementById("bot_part").style.borderRadius = "5%";
 				// document.getElementById("bg_top").style.top = "-42%";
 				// setTimeout("appVign()", 1000);
 				// setTimeout("deplaceVignettes()", 1500);
