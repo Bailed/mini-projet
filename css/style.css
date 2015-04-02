@@ -113,10 +113,10 @@ form textarea
 form input[type="text"]
 {
 	width: 60%;
-	height: 30px;
+	height: 29px;
 	background-color: rgba(255,255,255,0.8);
 	color: #000;
-	font-size: 18px;
+	font-size: 13px;
 	-moz-transition: background-color, border-top, .25s;
 	-webkit-transition: background-color, border-top, .25s;
 	-o-transition: background-color, border-top, .25s;
@@ -222,7 +222,6 @@ form input[type="password"],
 .my-btn {
 	height: 30px;
 	display: inline;
-	margin-top: -1.65em;
 	margin-left: -1em;
 }
 
@@ -236,11 +235,12 @@ form input[type="password"],
 }
 
 .b-title {
-	margin-top: -3em;
-	margin-left: 3em;
+	margin-top: 0em;
+	margin-left: 4.5em;
 	text-align:left;
 	color: #fff;
 	display: block;
+	font-size: 2em;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
 }

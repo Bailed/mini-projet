@@ -40,6 +40,7 @@
 				document.getElementById("top_part").style.top = "-55%";
 				//document.getElementById("top_part").style.borderRadius = "15%";
 				document.getElementById("bot_part").style.top = "95%";
+				document.getElementById("search-l").style.top = "0em";
 				//document.getElementById("bot_part").style.borderRadius = "5%";
 				// document.getElementById("bg_top").style.top = "-42%";
 				// setTimeout("appVign()", 1000);
