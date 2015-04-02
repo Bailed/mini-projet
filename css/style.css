@@ -224,6 +224,7 @@ form input[type="password"],
 	height: 30px;
 	display: inline;
 	margin-left: -1em;
+	background-color: inherit;
 }
 
 .my-label {
