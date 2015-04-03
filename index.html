@@ -1,13 +1,19 @@
 <html>
 
 	<head>
-		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
 		<title>jQuery - Recherche photos </title>
 		<link rel="Stylesheet" type="text/css" href="css/jQuery.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- Bootstrap CSS Framework -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<!-- Calendar lib -->
+		<link rel="stylesheet" type="text/css" href="js/pickadate/lib/themes/default.css">
+		<link rel="stylesheet" type="text/css" href="js/pickadate/lib/themes/default.date.css">
+		<!-- FontAwesome CSS -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<!-- ViewPort for mobile scale -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Others javascript functions -->
 		<script type="text/javascript" src="js/util.js"></script>
@@ -17,6 +23,8 @@
 
 		<!-- Animation Javascript -->
 		<script type="text/javascript" src="js/animation.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	</head>
 
 <body onload="initAutocompleteLocation(10);">
@@ -29,8 +37,7 @@
 					<input type="text" name="location" id="location" placeholder="Votre commune.." />
 					<button type="submit" class="btn my-btn" id="search-l"><i class="fa fa-search"></i></button>
 					<input type="text" name="number" id="number" value="1" />
-					<span class="desc-input">Photos</span>
-					
+					<span class="desc-input">Photos</span>					
 				</form>
 			</div>
 		</div>
@@ -39,19 +46,68 @@
 
 <!-- End portail -->
 <div class="container">
-	<div class="row text-center bg-white">
-		
-		<div class="alert" id="error_alert"></div>
-		<div class="alert" id="information_alert"></div>
-		<div class="alert" id="warning_alert"></div>
+	<div class="row text-center">
+		<div class="col-md-12">
+			<div class="alert alert-warning alert-dismisible" role="alert" id="error_alert">
+				<button type="button" class="close" data-dismiss="alert" arira-label="Close">
+					<span aria-hidden="true">&times;</span>				
+				</button>
+				Erreur Alerte
+			</div>
+			<div class="alert alert-info alert-dismisible" role="alert" id="information_alert">
+				<button type="button" class="close" data-dismiss="alert" arira-label="Close">
+					<span aria-hidden="true">&times;</span>				
+				</button>Information Alerte
+			</div>
+			<div class="alert alert-danger alert-dismisible" role="alert" id="warning_alert">
+				<button type="button" class="close" data-dismiss="alert" arira-label="Close">
+					<span aria-hidden="true">&times;</span>				
+				</button>Warning Alerte
+			</div>
+		</div>
+	</div>
 
 	<!-- View Image div -->
-		<div id="viewImage"> </div>
+		<div class="modal fade" id="viewImage"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" tabindex="-1">
+  			<div class="modal-dialog">
+    			<div class="modal-content" id="myModalContent">
+      				<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        				<span aria-hidden="true">&times;</span>
+        				</button>
+        			<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      				</div>
+     			 <div class="modal-body">
+        		...
+    			</div>
+     			<div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      			</div>
+    		</div>
+  		</div>
+	</div> 
+
+
+
+
+		<div class="col-md-12 text-center top-buffer-x2">
+			<div class="btn-group btn-group-justified" role="group">
+				<div class="btn-group btn-group-justified" role="group">
+					<button type="button" class="btn btn-default">Classique</button>
+				</div>
+				<div class="btn-group btn-group-justified" role="group">
+					<button type="button" class="btn btn-default">Caroussel</button>
+				</div>	
+				<button id="test" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#viewImage">
+  				Launch demo modal
+				</button>			
+			</div>
+		</div>
 	<!-- END Image div -->
 
-	<!-- Photo DIV -->
-
-		<div class="photos" id="div_photo"> </div>
+	<!-- Photo DIV -->		
+			<div class="photos row text-center bg-white top-buffer-x2" id="div_photo">
+			</div>
 	<!-- END photo div -->
 	</div>
 </div>
@@ -61,7 +117,8 @@
 	<h1 class="b-title">Recherche flickr</h1>
 </div>
 
-
+	<script type="text/javascript" src="js/pickadate/lib/picker.js"></script>
+	<script type="text/javascript" src="js/pickadate/lib/picker.date.js"></script>
 
 </body>
 </html>

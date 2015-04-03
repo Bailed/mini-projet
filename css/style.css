@@ -64,7 +64,7 @@ body,input,textarea,select
 
 #search
 {	
-	height:20px;
+	height:25px;
 	width:75%;
 	bottom: 0;
 	position: absolute;
@@ -184,9 +184,18 @@ form input[type="password"],
 	margin-right: auto;
 }
 
+#test {
+	z-index: 80000;
+}
+
 #viewImage
 {
-	display: none;
+
+	
+}
+
+#myModalContent {
+	background-color: #000;
 }
 
 .padding-buffer {
@@ -207,7 +216,7 @@ form input[type="password"],
 
 .bg-white {
 	background-color: rgba(255,255,255,0.7);
-	height:800%;
+	min-height: 800%;
 }
 
 .photos {
@@ -246,3 +255,25 @@ form input[type="password"],
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
 }
+
+.top-buffer-m2 {
+	margin-top : -2em;
+}
+
+.alert {
+	position: fixed;
+	margin-top: 5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	z-index: 8000;
+}
+
+.alert-danger, .alert-info, .alert-warning {
+	display:none;
+}
+
+.top-buffer-x2 {
+	margin-top: 3em;
+}
+

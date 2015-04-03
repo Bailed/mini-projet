@@ -93,7 +93,9 @@ function viewImage(idImage)
 		image = data.photo;
 
 		var display_photo 	= "<img src='https://farm"+image.farm+".staticflickr.com/"+image.server+"/"+image.id+"_"+image.originalsecret+"_o.jpg'/>";
+		var display_txt = "<div class='display-txt'>blablabla</div>";
 		$("#viewImage").html(display_photo);
+		$("#viewImage").html(display_txt);
 
 		$("#viewImage").fadeIn(500);
 
